@@ -1,0 +1,2612 @@
+# Bulgarian translation of tracker po-file.
+# Copyright (C) 2015 Free Software Foundation, Inc.
+# Copyright (C) 2022 Alexander Shopov <ash@kambanaria.org>.
+# This file is distributed under the same license as the tracer package.
+# Alexander Shopov <ash@kambanaria.org>, 2015, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: tracker master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/tracker/issues\n"
+"POT-Creation-Date: 2022-10-01 08:05+0000\n"
+"PO-Revision-Date: 2022-10-02 16:07+0200\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: this is a '|' (U+007C) separated list of common
+#. * title beginnings. Meant to be skipped for sorting purposes,
+#. * case doesn't matter. Given English media is quite common, it is
+#. * advised to leave the untranslated articles in addition to
+#. * the translated ones.
+#.
+#: src/libtracker-sparql/core/tracker-collation.c:333
+msgid "the|a|an"
+msgstr "the|a|an"
+
+#: src/portal/tracker-main.c:53
+msgid "Version"
+msgstr "Версия"
+
+#: src/portal/tracker-main.c:110 src/tracker/tracker-endpoint.c:387
+#: src/tracker/tracker-export.c:509 src/tracker/tracker-import.c:196
+#: src/tracker/tracker-sparql.c:1566 src/tracker/tracker-sql.c:239
+msgid "Unrecognized options"
+msgstr "Непознати опции"
+
+#: src/tracker/tracker-endpoint.c:50 src/tracker/tracker-export.c:48
+#: src/tracker/tracker-import.c:46 src/tracker/tracker-sparql.c:110
+#: src/tracker/tracker-sql.c:44
+msgid "Location of the database"
+msgstr "Местоположение на базата от данни"
+
+#: src/tracker/tracker-endpoint.c:51 src/tracker/tracker-endpoint.c:63
+msgid "DIR"
+msgstr "ПАПКА"
+
+#: src/tracker/tracker-endpoint.c:54
+msgid "Specify the DBus name of this endpoint"
+msgstr "Име по DBus за тази крайна точка"
+
+#: src/tracker/tracker-endpoint.c:55 src/tracker/tracker-endpoint.c:59
+msgid "NAME"
+msgstr "ИМЕ"
+
+#: src/tracker/tracker-endpoint.c:58
+msgid "Specify the ontology name used in this endpoint"
+msgstr "Име на онтологията за тази крайна точка"
+
+#: src/tracker/tracker-endpoint.c:62
+msgid "Specify a path to an ontology to be used in this endpoint"
+msgstr "Път към отнологията, която да се ползва от тази крайна точка"
+
+#: src/tracker/tracker-endpoint.c:66
+msgid "HTTP port"
+msgstr "Порт на HTTP"
+
+#: src/tracker/tracker-endpoint.c:70
+msgid "Whether to only allow HTTP connections in the loopback device"
+msgstr "Дари връзките по HTTP да са позволени само на локалния адрес loopback"
+
+#: src/tracker/tracker-endpoint.c:74
+msgid "Use session bus"
+msgstr "Ползване на сесийната шина"
+
+#: src/tracker/tracker-endpoint.c:78
+msgid "Use system bus"
+msgstr "Ползване на системната шина"
+
+#: src/tracker/tracker-endpoint.c:82
+msgid "List SPARQL endpoints available in DBus"
+msgstr "Извеждане на крайните точки по SPARQL, които DBus може да ползва"
+
+#. TRANSLATORS: these are commandline arguments
+#: src/tracker/tracker-endpoint.c:103
+msgid "--list can only be used with --session or --system"
+msgstr "опцията „--list“ изисква някоя от „--session“ или „--system“"
+
+#. TRANSLATORS: those are commandline arguments
+#: src/tracker/tracker-endpoint.c:109
+msgid "One “ontology” or “ontology-path” option should be provided"
+msgstr "Опциите „--ontology“ и „--ontology-path“ са несъвместими"
+
+#. TRANSLATORS: those are commandline arguments
+#: src/tracker/tracker-endpoint.c:115
+msgid "--http-port cannot be used with --dbus-service"
+msgstr "Опциите „--http-port“ и „--dbus-service“ са несъвместими"
+
+#: src/tracker/tracker-endpoint.c:186
+#, c-format
+msgid "Creating HTTP endpoint at %s…"
+msgstr "Създаване на крайна точка по HTTP при %s…"
+
+#: src/tracker/tracker-endpoint.c:206 src/tracker/tracker-endpoint.c:269
+msgid "Listening to SPARQL commands. Press Ctrl-C to stop."
+msgstr "Слушане за команди по SPARQL. Натиснете Ctrl-C за спиране."
+
+#. Carriage return, so we paper over the ^C
+#: src/tracker/tracker-endpoint.c:214 src/tracker/tracker-endpoint.c:284
+msgid "Closing connection…"
+msgstr "Затваряне на връзката…"
+
+#: src/tracker/tracker-endpoint.c:229
+#, c-format
+msgid "Creating endpoint at %s…"
+msgstr "Създаване на крайна точка при %s…"
+
+#: src/tracker/tracker-endpoint.c:265
+msgid "Could not own DBus name"
+msgstr "Непритежавано име по DBus"
+
+#: src/tracker/tracker-endpoint.c:279
+msgid "DBus name lost"
+msgstr "Името по DBus е изгубено"
+
+#: src/tracker/tracker-endpoint.c:421
+#, c-format
+msgid "Opening database at %s…"
+msgstr "Oтваряне на базата от данни при %s…"
+
+#: src/tracker/tracker-endpoint.c:424
+msgid "Creating in-memory database"
+msgstr "Създаване на база от данни в паметта"
+
+#: src/tracker/tracker-endpoint.c:451
+msgid ""
+"New database created. Use the “--dbus-service” option to share this database "
+"on a message bus."
+msgstr ""
+"Създадена е нова база от данни. Ползвайте опцията „--dbus-service“, за да я "
+"споделите по шина за съобщения."
+
+#: src/tracker/tracker-export.c:49 src/tracker/tracker-import.c:47
+#: src/tracker/tracker-import.c:62 src/tracker/tracker-import.c:63
+#: src/tracker/tracker-sparql.c:111 src/tracker/tracker-sparql.c:123
+#: src/tracker/tracker-sql.c:45 src/tracker/tracker-sql.c:49
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+#: src/tracker/tracker-export.c:52 src/tracker/tracker-import.c:50
+#: src/tracker/tracker-sparql.c:114
+msgid "Connects to a DBus service"
+msgstr "Свързване към услуга за DBus"
+
+#: src/tracker/tracker-export.c:53 src/tracker/tracker-import.c:51
+#: src/tracker/tracker-sparql.c:115
+msgid "DBus service name"
+msgstr "Име на услуга за DBus"
+
+#: src/tracker/tracker-export.c:56 src/tracker/tracker-import.c:54
+#: src/tracker/tracker-sparql.c:118
+msgid "Connects to a remote service"
+msgstr "Свързване към отдалечена услуга"
+
+#: src/tracker/tracker-export.c:57 src/tracker/tracker-import.c:55
+#: src/tracker/tracker-sparql.c:119
+msgid "Remote service URI"
+msgstr "Адрес на отдалечената услуга"
+
+#: src/tracker/tracker-export.c:60
+msgid "Output TriG format which includes named graph information"
+msgstr "Извеждане във формат TriG, който съдържа информация от именовани гра̀фи"
+
+#: src/tracker/tracker-export.c:72 src/tracker/tracker-export.c:73
+msgid "IRI"
+msgstr "IRI (интернационализиран идентификатор на ресурс)"
+
+#. TRANSLATORS: Those are commandline arguments
+#: src/tracker/tracker-export.c:98 src/tracker/tracker-import.c:88
+#: src/tracker/tracker-sparql.c:199
+msgid "Specify one “--database”, “--dbus-service” or “--remote-service” option"
+msgstr ""
+"Укажете точно една от опциите „--database“, „--dbus-service“ или „--remote-"
+"service“"
+
+#: src/tracker/tracker-export.c:305 src/tracker/tracker-export.c:325
+#: src/tracker/tracker-import.c:125 src/tracker/tracker-sparql.c:1124
+msgid "No error given"
+msgstr "Не е дадена грешка"
+
+#: src/tracker/tracker-export.c:324 src/tracker/tracker-import.c:124
+#: src/tracker/tracker-sparql.c:1123
+msgid "Could not establish a connection to Tracker"
+msgstr "Не може да се установи връзка с основния процес на индексирането"
+
+#: src/tracker/tracker-export.c:391 src/tracker/tracker-export.c:404
+#: src/tracker/tracker-export.c:414 src/tracker/tracker-sparql.c:1502
+#: src/tracker/tracker-sql.c:137 src/tracker/tracker-sql.c:170
+msgid "Could not run query"
+msgstr "Заявката не може да се изпълни"
+
+#: src/tracker/tracker-help.c:60 src/tracker/tracker-help.c:72
+#, c-format
+msgid "failed to exec “%s”: %s"
+msgstr "неуспешно изпълнение на „%s“: %s"
+
+#: src/tracker/tracker-import.c:58
+msgid "Read TriG format which includes named graph information"
+msgstr ""
+"Прочитане на данни във формат TriG, който включва информация за наименовани "
+"гра̀фи"
+
+#: src/tracker/tracker-import.c:103 src/tracker/tracker-import.c:141
+msgid "Could not run import"
+msgstr "Не може да се внесе"
+
+#: src/tracker/tracker-main.c:89
+msgid "Get help on how to use Tracker and any of these commands"
+msgstr "Помощ за използването на Tracker и командите му"
+
+#: src/tracker/tracker-main.c:90
+msgid "Create a SPARQL endpoint"
+msgstr "Създаване на крайна точка за SPARQL"
+
+#: src/tracker/tracker-main.c:91
+msgid "Export data from a Tracker database"
+msgstr "Изнасяне на данни от база от данни на Tracker"
+
+#: src/tracker/tracker-main.c:92
+msgid "Import data into a Tracker database"
+msgstr "Внасяне на данни в база от данни на Tracker"
+
+#: src/tracker/tracker-main.c:93
+msgid ""
+"Query and update the index using SPARQL or search, list and tree the ontology"
+msgstr ""
+"Търсене и обновяване на индекса чрез SPARQL или търсене, извеждане като "
+"списък или дърво на онтологията"
+
+#: src/tracker/tracker-main.c:94
+msgid "Query the database at the lowest level using SQL"
+msgstr "Заявка към базата на ниско ниво чрез SQL"
+
+#: src/tracker/tracker-main.c:134
+#, c-format
+msgid "“%s” is not a tracker3 command. See “tracker3 --help”"
+msgstr "„%s“ не е команда на tracker3. Вижте „tracker3 --help“"
+
+#: src/tracker/tracker-main.c:169
+msgid "Available tracker3 commands are:"
+msgstr "Съществуващите команди на tracker3 са:"
+
+#: src/tracker/tracker-main.c:209
+msgid "Additional / third party commands are:"
+msgstr "Допълнителните команди са:"
+
+#: src/tracker/tracker-main.c:224
+msgid "See “tracker3 help <command>” to read about a specific subcommand."
+msgstr "За повече информация използвайте „tracker3 help КОМАНДА“."
+
+#: src/tracker/tracker-sparql.c:122
+msgid "Path to use to run a query or update from file"
+msgstr "Път за заявката или обновяване от файл"
+
+#: src/tracker/tracker-sparql.c:126
+msgid "SPARQL query"
+msgstr "Заявка на SPARQL"
+
+#: src/tracker/tracker-sparql.c:127
+msgid "SPARQL"
+msgstr "SPARQL"
+
+#: src/tracker/tracker-sparql.c:130
+msgid "This is used with --query and for database updates only."
+msgstr ""
+"Използва се с опцията „--query“ и е само за промени по базата от данни."
+
+#: src/tracker/tracker-sparql.c:134
+msgid "Retrieve classes"
+msgstr "Получаване на класовете"
+
+#: src/tracker/tracker-sparql.c:138
+msgid "Retrieve class prefixes"
+msgstr "Получаване на префиксите на класовете"
+
+#: src/tracker/tracker-sparql.c:142
+msgid ""
+"Retrieve properties for a class, prefixes can be used too (e.g. rdfs:"
+"Resource)"
+msgstr ""
+"Получаване на свойствата на клас. Може да се ползват и префикси (напр. „rdfs:"
+"Resource“)"
+
+#: src/tracker/tracker-sparql.c:143 src/tracker/tracker-sparql.c:147
+#: src/tracker/tracker-sparql.c:159 src/tracker/tracker-sparql.c:167
+#: src/tracker/tracker-sparql.c:171
+msgid "CLASS"
+msgstr "КЛАС"
+
+#: src/tracker/tracker-sparql.c:146
+msgid ""
+"Retrieve classes which notify changes in the database (CLASS is optional)"
+msgstr ""
+"Получаване на класовете, които известяват за промени в базата от данни "
+"(задаването на конкретен КЛАС не е задължително)"
+
+#: src/tracker/tracker-sparql.c:150
+msgid ""
+"Retrieve indexes used in database to improve performance (PROPERTY is "
+"optional)"
+msgstr ""
+"Получаване на индексите, които се използват в базата от данни за подобряване "
+"на производителността (задаването на конкретно СВОЙСТВО не е задължително)"
+
+#: src/tracker/tracker-sparql.c:151
+msgid "PROPERTY"
+msgstr "СВОЙСТВО"
+
+#: src/tracker/tracker-sparql.c:154
+msgid "Retrieve all named graphs"
+msgstr "Получаване на всички именовани гра̀фи"
+
+#: src/tracker/tracker-sparql.c:158
+msgid ""
+"Describe subclasses, superclasses (can be used with -s to highlight parts of "
+"the tree and -p to show properties)"
+msgstr ""
+"Описание на под- и надкласовете (може да се комбинира с опцията „-s“ за "
+"оцветяване на части от дървото и „-p“ за извеждане на свойствата)"
+
+#: src/tracker/tracker-sparql.c:162
+msgid ""
+"Search for a class or property and display more information (e.g. Document)"
+msgstr ""
+"Търсене на клас или свойство и извеждане на още информация (напр. Документ)"
+
+#: src/tracker/tracker-sparql.c:163
+msgid "CLASS/PROPERTY"
+msgstr "КЛАС/СВОЙСТВО"
+
+#: src/tracker/tracker-sparql.c:166
+msgid "Returns the shorthand for a class (e.g. nfo:FileDataObject)."
+msgstr "Извеждане на съкращението на клас (напр. „nfo:FileDataObject“)."
+
+#: src/tracker/tracker-sparql.c:170
+msgid "Returns the full namespace for a class."
+msgstr "Извеждане на пълното пространство от имена на клас."
+
+#: src/tracker/tracker-sparql.c:232
+msgid "Unable to retrieve namespace prefixes"
+msgstr "Префиксите за пространствата от имена не може да бъдат получени"
+
+#: src/tracker/tracker-sparql.c:240
+msgid "No namespace prefixes were returned"
+msgstr "Не са върнати никакви префикси за пространствата от имена"
+
+#: src/tracker/tracker-sparql.c:286
+msgid "Could not get namespace prefixes"
+msgstr "Префиксите за пространства от имена не може да бъдат получени."
+
+#: src/tracker/tracker-sparql.c:295
+msgid "No namespace prefixes were found"
+msgstr "Не са открити префикси за пространства от имена"
+
+#. To translators: This is to say there are no
+#. * search results found. We use a "foo: None"
+#. * with multiple print statements, where "foo"
+#. * may be Music or Images, etc.
+#: src/tracker/tracker-sparql.c:541 src/tracker/tracker-sparql.c:589
+msgid "None"
+msgstr "Няма"
+
+#: src/tracker/tracker-sparql.c:1003
+msgid "Could not create tree: subclass query failed"
+msgstr "Не може да се създаде дърво: неуспешна заявка за подклас"
+
+#: src/tracker/tracker-sparql.c:1052
+msgid "Could not create tree: class properties query failed"
+msgstr "Не може да се създаде дърво: неуспешна заявка за свойства на клас"
+
+#: src/tracker/tracker-sparql.c:1139
+msgid "Could not list classes"
+msgstr "Класовете не могат да бъдат изброени"
+
+#: src/tracker/tracker-sparql.c:1147
+msgid "No classes were found"
+msgstr "Не са открити класове"
+
+#: src/tracker/tracker-sparql.c:1147 src/tracker/tracker-sparql.c:1363
+msgid "Classes"
+msgstr "Класове"
+
+#: src/tracker/tracker-sparql.c:1163
+msgid "Could not list class prefixes"
+msgstr "Префиксите на класовете не може да бъдат изброени"
+
+#: src/tracker/tracker-sparql.c:1171
+msgid "No class prefixes were found"
+msgstr "Не са открити префикси на класовете"
+
+#: src/tracker/tracker-sparql.c:1171
+msgid "Prefixes"
+msgstr "Префикси"
+
+#: src/tracker/tracker-sparql.c:1191
+msgid ""
+"Could not find property for class prefix, e.g. :Resource in “rdfs:Resource”"
+msgstr ""
+"Не може да се открие свойство за префикс на клас (напр. „:Resource“ в „rdfs:"
+"Resource“)"
+
+#: src/tracker/tracker-sparql.c:1230
+msgid "Could not list properties"
+msgstr "Свойствата не може да бъдат изведени"
+
+#: src/tracker/tracker-sparql.c:1238
+msgid "No properties were found"
+msgstr "Не са открити свойства"
+
+#: src/tracker/tracker-sparql.c:1238 src/tracker/tracker-sparql.c:1386
+msgid "Properties"
+msgstr "Свойства"
+
+#: src/tracker/tracker-sparql.c:1266
+msgid "Could not find notify classes"
+msgstr "Класовете за известяване не може да бъдат открити"
+
+#: src/tracker/tracker-sparql.c:1274
+msgid "No notifies were found"
+msgstr "Не са открити известители"
+
+#: src/tracker/tracker-sparql.c:1274
+msgid "Notifies"
+msgstr "Известители"
+
+#: src/tracker/tracker-sparql.c:1300
+msgid "Could not find indexed properties"
+msgstr "Не може да се намерят индексирани свойства"
+
+#: src/tracker/tracker-sparql.c:1308
+msgid "No indexes were found"
+msgstr "Не са открити индекси"
+
+#: src/tracker/tracker-sparql.c:1308
+msgid "Indexes"
+msgstr "Индекси"
+
+#: src/tracker/tracker-sparql.c:1324
+msgid "Could not list named graphs"
+msgstr "Именованите гра̀фи не може да бъдат изброени"
+
+#: src/tracker/tracker-sparql.c:1332
+msgid "No graphs were found"
+msgstr "Не са открити гра̀фи"
+
+#: src/tracker/tracker-sparql.c:1332
+msgid "Named graphs"
+msgstr "Именовани гра̀фи"
+
+#: src/tracker/tracker-sparql.c:1355
+msgid "Could not search classes"
+msgstr "Класовете не могат да се търсят"
+
+#: src/tracker/tracker-sparql.c:1363
+msgid "No classes were found to match search term"
+msgstr "Не са открити класове, които да отговарят на търсенето"
+
+#: src/tracker/tracker-sparql.c:1378
+msgid "Could not search properties"
+msgstr "Свойствата не могат да се търсят"
+
+#: src/tracker/tracker-sparql.c:1386
+msgid "No properties were found to match search term"
+msgstr "Не са открити свойства, които да отговарят на търсенето"
+
+#: src/tracker/tracker-sparql.c:1423 src/tracker/tracker-sql.c:70
+msgid "Could not get UTF-8 path from path"
+msgstr "Не може да се получи вариант в UTF-8 на този път"
+
+#: src/tracker/tracker-sparql.c:1435 src/tracker/tracker-sql.c:81
+msgid "Could not read file"
+msgstr "Не може да се прочете файл"
+
+#: src/tracker/tracker-sparql.c:1454
+msgid "Could not run update"
+msgstr "Обновяването не може да се изпълни"
+
+#: src/tracker/tracker-sparql.c:1461
+msgid "Done"
+msgstr "Готово"
+
+#: src/tracker/tracker-sparql.c:1515 src/tracker/tracker-sparql.c:1518
+msgid "No results found matching your query"
+msgstr "Няма резултати за заявката"
+
+#: src/tracker/tracker-sparql.c:1515 src/tracker/tracker-sparql.c:1518
+#: src/tracker/tracker-sql.c:144
+msgid "Results"
+msgstr "Резултати"
+
+#: src/tracker/tracker-sparql.c:1575 src/tracker/tracker-sql.c:250
+msgid "File and query can not be used together"
+msgstr "Опциите за файл и заявка са несъвместими"
+
+#: src/tracker/tracker-sparql.c:1577
+msgid ""
+"The --list-properties argument can only be empty when used with the --tree "
+"argument"
+msgstr ""
+"Опцията „--list-properties“ трябва да няма аргумент, когато се съчетава с "
+"аргумент на „--tree“"
+
+#: src/tracker/tracker-sql.c:48
+msgid "Path to use to run a query from file"
+msgstr "Път за заявката от файл"
+
+#: src/tracker/tracker-sql.c:52
+msgid "SQL query"
+msgstr "Заявка на SQL"
+
+#: src/tracker/tracker-sql.c:53
+msgid "SQL"
+msgstr "SQL"
+
+#: src/tracker/tracker-sql.c:114
+msgid "Failed to initialize data manager"
+msgstr "Неуспешно инициализиране на управлението на данните"
+
+#: src/tracker/tracker-sql.c:178
+msgid "Empty result set"
+msgstr "Празен резултат"
+
+#: src/tracker/tracker-sql.c:248
+msgid "A database path must be specified"
+msgstr "Укажете път до базата от данни"
+
+#~ msgid "All posts"
+#~ msgstr "Всички статии"
+
+#~ msgid "By usage"
+#~ msgstr "По пренадзначиение"
+
+#~ msgid "unknown time"
+#~ msgstr "неизвестно време"
+
+#~ msgid "less than one second"
+#~ msgstr "под секунда"
+
+#, c-format
+#~ msgid " %dd"
+#~ msgstr " %d д"
+
+#, c-format
+#~ msgid " %2.2dh"
+#~ msgstr " %2.2d ч"
+
+#, c-format
+#~ msgid " %2.2dm"
+#~ msgstr " %2.2d м"
+
+#, c-format
+#~ msgid " %2.2ds"
+#~ msgstr " %2.2d с"
+
+#, c-format
+#~ msgid " %d day"
+#~ msgid_plural " %d days"
+#~ msgstr[0] " %d ден"
+#~ msgstr[1] " %d дни"
+
+#, c-format
+#~ msgid " %2.2d hour"
+#~ msgid_plural " %2.2d hours"
+#~ msgstr[0] " %2.2d час"
+#~ msgstr[1] " %2.2d часа"
+
+#, c-format
+#~ msgid " %2.2d minute"
+#~ msgid_plural " %2.2d minutes"
+#~ msgstr[0] " %2.2d минута"
+#~ msgstr[1] " %2.2d минути"
+
+#, c-format
+#~ msgid " %2.2d second"
+#~ msgid_plural " %2.2d seconds"
+#~ msgstr[0] " %2.2d секунда"
+#~ msgstr[1] " %2.2d секунди"
+
+#~ msgid "Maximum length of a word to be indexed"
+#~ msgstr "Максимална дължина на думи за индексиране"
+
+#~ msgid ""
+#~ "Words with more characters than this length will be ignored by the "
+#~ "indexer."
+#~ msgstr "Думите по-дълги от това няма да бъдат индексирани."
+
+#~ msgid "Maximum number of words to index in a document"
+#~ msgstr "Максимален брой индексирани думи в документ"
+
+#~ msgid ""
+#~ "Indexer will read only this maximum number of words from a single "
+#~ "document."
+#~ msgstr ""
+#~ "Това е максималният брой думи, които ще бъдат прочетени и индексирани в "
+#~ "документ."
+
+#~ msgid "Enable stemmer"
+#~ msgstr "Формообразуване"
+
+#~ msgid ""
+#~ "Simplify the words to their root to provide more results. E.g. 'shelves' "
+#~ "and 'shelf' to 'shel'"
+#~ msgstr ""
+#~ "Опростяване на думите към корена им. Така се получават повече резултати. "
+#~ "Например „пътища“, „попътният“ и „пропътувайки“ съответстват на „път“."
+
+#~ msgid "Enable unaccent"
+#~ msgstr "Изчистване на надредните знаци"
+
+#~ msgid ""
+#~ "Translate accented characters to the equivalent unaccented. E.g. 'Idéa' "
+#~ "to 'Idea' for improved matching."
+#~ msgstr ""
+#~ "Преобразуване на буквите с ударения или друг надреден знак към "
+#~ "съответстващата им без такива знаци. Например „въ̀лна“ и „вълна̀“ се "
+#~ "преобразуват към „вълна“. Така се откриват повече резултати."
+
+#~ msgid "Ignore numbers"
+#~ msgstr "Прескачане на числата"
+
+#~ msgid "If enabled, numbers will not be indexed."
+#~ msgstr "Числата да не бъдат индексирани."
+
+#~ msgid "Ignore stop words"
+#~ msgstr "Прескачане на най-честите"
+
+#~ msgid ""
+#~ "If enabled, the words listed in the stop-words list are ignored. E.g. "
+#~ "common words like 'the', 'yes', 'no', etc."
+#~ msgstr ""
+#~ "Без индексиране на някои кратки, чести думи, които не предоставят "
+#~ "специфичност – напр. „да“, „не“ и др."
+
+#~ msgid "Maximum size of journal"
+#~ msgstr "Максимален размер на журнала"
+
+#~ msgid "Size of the journal at rotation in MB. Use -1 to disable rotating."
+#~ msgstr ""
+#~ "Размер за смяна на журналния файл в MB. Стойността „-1“ изключва "
+#~ "сменянето."
+
+#~ msgid "Location of journal pieces"
+#~ msgstr "Местоположение на журналните файлове"
+
+#~ msgid "Where to store a journal chunk when it hits the max size."
+#~ msgstr ""
+#~ "Къде да се записват журналните файлове след достигането на максималния "
+#~ "размер."
+
+#~ msgid "Error starting 'tar' program"
+#~ msgstr "Грешка при стартирането на програмата „tar“"
+
+#, c-format
+#~ msgid "Unknown error, 'tar' exited with status %d"
+#~ msgstr "Непозната грешка. „tar“ завърши с код %d"
+
+#~ msgid "Operation not supported"
+#~ msgstr "Неподдържана операция"
+
+#~ msgid "Pause application and reason match an already existing pause request"
+#~ msgstr ""
+#~ "Пауза на приложението с причина, съвпадаща с вече съществуваща заявка за "
+#~ "пауза"
+
+#~ msgid "Cookie not recognized to resume paused miner"
+#~ msgstr ""
+#~ "Несъвпадаща бисквитка, затова анализаторът на пауза не може да продължи"
+
+#~ msgid "Data store is not available"
+#~ msgstr "Съхранените данни липсват"
+
+#~ msgid "Indexing not recommended on this network connection"
+#~ msgstr "Не се препоръчва индексиране при такава мрежова връзка"
+
+#~ msgid "Applications"
+#~ msgstr "Програми"
+
+#~ msgid "Applications data miner"
+#~ msgstr "Анализатор на данните от програмите"
+
+#~ msgid ""
+#~ "Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug "
+#~ "(default=0)"
+#~ msgstr ""
+#~ "Подробност на журнални съобщения: „0“ (само грешки), „1“ (минимална), "
+#~ "„2“ (подробна) и „3“ (най-подробна). Стандартно е „0“."
+
+#~ msgid "Runs until all applications are indexed and then exits"
+#~ msgstr ""
+#~ "Изпълнение докато всички програми се индексират и след това спира работа"
+
+#~ msgid "Displays version information"
+#~ msgstr "Извеждане на информацията за версията"
+
+#~ msgid "- start the application data miner"
+#~ msgstr "— стартиране на анализа на данните от програмите"
+
+#~ msgid "Tracker Application Miner"
+#~ msgstr "Анализатор на данните от програмите"
+
+#~ msgid "Indexes information about applications installed"
+#~ msgstr "Индексиране на информация за инсталираните програми"
+
+#~ msgid "File System"
+#~ msgstr "Файлови системи"
+
+#~ msgid "File system data miner"
+#~ msgstr "Анализатор на данните от файловите системи"
+
+#~ msgid "Log verbosity"
+#~ msgstr "Подробност"
+
+#~ msgid "Log verbosity."
+#~ msgstr "Подробност на журналните съобщения."
+
+#~ msgid "Initial sleep"
+#~ msgstr "Начален интервал за приспиване"
+
+#~ msgid "Initial sleep time, in seconds."
+#~ msgstr "Първоначално време в секунди за приспиване на индексирането."
+
+#~ msgid "Scheduler priority when idle"
+#~ msgstr "Приоритет на диспечера при бездействие"
+
+#~ msgid ""
+#~ "The scheduler is the kernel component that decides which runnable "
+#~ "application will be executed by the CPU next. Each application has an "
+#~ "associated scheduling policy and priority."
+#~ msgstr ""
+#~ "Диспечерът е компонентът на ядрото, който определя коя да е следващата "
+#~ "програма, което да се изпълнява от процесора. За всяко приложение се "
+#~ "прилага съответна политика и приоритет на диспечера."
+
+#~ msgid "Throttle"
+#~ msgstr "Ограничаване"
+
+#~ msgid "Indexing speed, the higher the slower."
+#~ msgstr ""
+#~ "Ограничаване на скоростта на индексиране. По-високите стойности водят до "
+#~ "по-голямо ограничаване на скоростта."
+
+#~ msgid "Low disk space limit"
+#~ msgstr "Праг на дисковото пространство"
+
+#~ msgid ""
+#~ "Disk space threshold in percent at which to pause indexing, or -1 to "
+#~ "disable."
+#~ msgstr ""
+#~ "Праг на дисковото пространство, при който индексирането спира. Стойността "
+#~ "„-1“ маха ограничението на прага."
+
+#~ msgid "Crawling interval"
+#~ msgstr "Интервал на индексиране"
+
+#~ msgid ""
+#~ "Interval in days to check whether the filesystem is up to date in the "
+#~ "database. 0 forces crawling anytime, -1 forces it only after unclean "
+#~ "shutdowns, and -2 disables it entirely."
+#~ msgstr ""
+#~ "Интервал в дни за проверка на съответствието на файловите системи с "
+#~ "базата от индексирани данни. Стойността „0“ позволява проверката по всяко "
+#~ "време, „-1“ — само след неочаквано рестартиране на машината, а „-2“ "
+#~ "изцяло изключва тези проверки."
+
+#~ msgid "Removable devices' data permanence threshold"
+#~ msgstr "Запазване на данни за преносими устройства"
+
+#~ msgid ""
+#~ "Threshold in days after which files from removables devices will be "
+#~ "removed from database if not mounted. 0 means never, maximum is 365."
+#~ msgstr ""
+#~ "Праг в дни, след който данните за преносими устройства, които не са били "
+#~ "монтирани в този период, се изтриват от базата данни."
+
+#~ msgid "Enable monitors"
+#~ msgstr "Включване на следенето"
+
+#~ msgid "Set to false to completely disable any file monitoring"
+#~ msgstr ""
+#~ "Когато е „false“ (лъжа), следенето на файловете напълно се изключва."
+
+#~ msgid "Enable writeback"
+#~ msgstr "Включване на пакетен запис"
+
+#~ msgid "Set to false to completely disable any file writeback"
+#~ msgstr ""
+#~ "Когато е „false“ (лъжа), пакетното запазване на промени във файловете "
+#~ "напълно се изключва."
+
+#~ msgid "Index removable devices"
+#~ msgstr "Индексиране на преносимите устройства"
+
+#~ msgid ""
+#~ "Set to true to enable indexing mounted directories for removable devices."
+#~ msgstr ""
+#~ "Когато е „true“ (истина), папките представляващи монтираните преносими "
+#~ "устройства ще се индексират."
+
+#~ msgid "Index optical discs"
+#~ msgstr "Индексиране на оптични дискове"
+
+#~ msgid ""
+#~ "Set to true to enable indexing CDs, DVDs, and generally optical media (if "
+#~ "removable devices are not indexed, optical discs won't be either)"
+#~ msgstr ""
+#~ "Когато е „true“ (истина), CD, DVD и други оптични медии ще се индексират. "
+#~ "Ключът за индексирането на преносимите устройства също трябва да е "
+#~ "„true“ (истина)"
+
+#~ msgid "Index when running on battery"
+#~ msgstr "Индексиране при захранване от батерии"
+
+#~ msgid "Set to true to index while running on battery"
+#~ msgstr ""
+#~ "Когато е „true“ (истина), индексирането ще продължава и при захранване от "
+#~ "батерии."
+
+#~ msgid "Perform initial indexing when running on battery"
+#~ msgstr "Първоначално индексиране при захранване от батерии"
+
+#~ msgid ""
+#~ "Set to true to index while running on battery for the first time only"
+#~ msgstr ""
+#~ "Когато е „true“ (истина), само първоначалното индексиране ще се извърши и "
+#~ "при захранване от батерии."
+
+#~ msgid "Directories to index recursively"
+#~ msgstr "Папки за рекурсивно индексиране"
+
+#~ msgid ""
+#~ "List of directories to index recursively, Special values include: &amp;"
+#~ "DESKTOP, &amp;DOCUMENTS, &amp;DOWNLOAD, &amp;MUSIC, &amp;PICTURES, &amp;"
+#~ "PUBLIC_SHARE, &amp;TEMPLATES, &amp;VIDEOS. See /etc/xdg/user-dirs."
+#~ "defaults and $HOME/.config/user-dirs.default"
+#~ msgstr ""
+#~ "Списък с папки за рекурсивно индексиране. Специални стойности са: „&amp;"
+#~ "DESKTOP“ (Плот), „&amp;DOCUMENTS“ (Документи), „&amp;DOWNLOAD“ (Свалени), "
+#~ "„&amp;MUSIC“ (Музика), „&amp;PICTURES“ (Изображения), „&amp;"
+#~ "PUBLIC_SHARE“ (Публични), „&amp;TEMPLATES“ (Шаблони), „&amp;"
+#~ "VIDEOS“ (Видео). Вижте „/etc/xdg/user-dirs.defaults“ и „$HOME/.config/"
+#~ "user-dirs.default“."
+
+#~ msgid "Directories to index non-recursively"
+#~ msgstr "Папки за нерекурсивно индексиране"
+
+#~ msgid ""
+#~ "List of directories to index without inspecting subfolders, Special "
+#~ "values include: &amp;DESKTOP, &amp;DOCUMENTS, &amp;DOWNLOAD, &amp;MUSIC, "
+#~ "&amp;PICTURES, &amp;PUBLIC_SHARE, &amp;TEMPLATES, &amp;VIDEOS. See /etc/"
+#~ "xdg/user-dirs.defaults and $HOME/.config/user-dirs.default"
+#~ msgstr ""
+#~ "Списък с папки за нерекурсивно индексиране. Специални стойности са: „&amp;"
+#~ "DESKTOP“ (Плот), „&amp;DOCUMENTS“ (Документи), „&amp;DOWNLOAD“ (Свалени), "
+#~ "„&amp;MUSIC“ (Музика), „&amp;PICTURES“ (Изображения), „&amp;"
+#~ "PUBLIC_SHARE“ (Публични), „&amp;TEMPLATES“ (Шаблони), „&amp;"
+#~ "VIDEOS“ (Видео). Вижте „/etc/xdg/user-dirs.defaults“ и „$HOME/.config/"
+#~ "user-dirs.default“."
+
+#~ msgid "Ignored files"
+#~ msgstr "Прескачани файлове"
+
+#~ msgid "List of file patterns to avoid"
+#~ msgstr ""
+#~ "Списък с шаблони за имена на файловете, които да не бъдат индексирани"
+
+#~ msgid "Ignored directories"
+#~ msgstr "Прескачани папки"
+
+#~ msgid "List of directories to avoid"
+#~ msgstr "Списък с шаблони за имена на папките, които да не бъдат индексирани"
+
+#~ msgid "Ignored directories with content"
+#~ msgstr "Папки за прескачане заради съдържание"
+
+#~ msgid "Avoid any directory containing a file blacklisted here"
+#~ msgstr ""
+#~ "Списък с шаблони за имена на файлове, които карат папката, която ги "
+#~ "съдържа, да не се индексира"
+
+#~ msgid "Initial sleep time in seconds, 0->1000 (default=15)"
+#~ msgstr ""
+#~ "Първоначално време преди събуждане на процеса в секунди в интервала [0; "
+#~ "1000]. Стандартно е „15“."
+
+#~ msgid "Runs until all configured locations are indexed and then exits"
+#~ msgstr "Изпълнение докато всички настроени местоположения се индексират"
+
+#~ msgid "Checks if FILE is eligible for being mined based on configuration"
+#~ msgstr "Проверка дали ФАЙЛът подлежи на индексиране според настройките"
+
+#, c-format
+#~ msgid "Data object '%s' currently exists"
+#~ msgstr "Съществува обект с данни „%s“"
+
+#, c-format
+#~ msgid "Data object '%s' currently does not exist"
+#~ msgstr "Не съществува обект с данни „%s“"
+
+#~ msgid "Directory is eligible to be mined (based on rules)"
+#~ msgstr "Папката подлежи на анализ (според правилата)"
+
+#~ msgid "Directory is NOT eligible to be mined (based on rules)"
+#~ msgstr "Папката НЕ подлежи на анализ (според правилата)"
+
+#~ msgid "Directory is eligible to be mined (based on contents)"
+#~ msgstr "Папката подлежи на анализ (според съдържанието си)"
+
+#~ msgid "Directory is NOT eligible to be mined (based on contents)"
+#~ msgstr "Папката НЕ подлежи на анализ (според съдържанието си)"
+
+#~ msgid "Directory is eligible to be monitored (based on config)"
+#~ msgstr "Папката подлежи на следене (според настройките)"
+
+#~ msgid "Directory is NOT eligible to be monitored (based on config)"
+#~ msgstr "Папката НЕ подлежи на следене (според настройките)"
+
+#~ msgid "File is eligible to be monitored (based on config)"
+#~ msgstr "Файлът подлежи на следене (според настройките)"
+
+#~ msgid "File is NOT eligible to be monitored (based on config)"
+#~ msgstr "Файлът НЕ подлежи на следене (според настройките)"
+
+#~ msgid "File or Directory is eligible to be monitored (based on config)"
+#~ msgstr "Файлът или папката подлежи на следене (според настройките)"
+
+#~ msgid "File or Directory is NOT eligible to be monitored (based on config)"
+#~ msgstr "Файлът или папката НЕ подлежи на следене (според настройките)"
+
+#~ msgid "File is eligible to be mined (based on rules)"
+#~ msgstr "Файлът подлежи на анализ (според правилата)"
+
+#~ msgid "File is NOT eligible to be mined (based on rules)"
+#~ msgstr "Файлът НЕ подлежи на анализ (според правилата)"
+
+#~ msgid "Would be indexed"
+#~ msgstr "Ще се индексира"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "No"
+#~ msgstr "Не"
+
+#~ msgid "Would be monitored"
+#~ msgstr "Ще се следи"
+
+#~ msgid "- start the tracker indexer"
+#~ msgstr "— стартиране на индексирането"
+
+#~ msgid "Low battery"
+#~ msgstr "Нисък заряд на батерията"
+
+#~ msgid "Low disk space"
+#~ msgstr "Дисковото пространство е на привършване"
+
+#~ msgid "Tracker File System Miner"
+#~ msgstr "Анализатор на файловата система"
+
+#~ msgid "Crawls and processes files on the file system"
+#~ msgstr "Индексиране на файловете във файловата система"
+
+#~ msgid "RSS/ATOM Feeds"
+#~ msgstr "Емисии RSS/ATOM"
+
+#~ msgid "Fetch RSS/ATOM Feeds"
+#~ msgstr "Изтегляне на емисии RSS/ATOM"
+
+#~ msgid "Add feed (must be used with --title)"
+#~ msgstr "Добавяне на емисия (изисква и опцията „--title“)"
+
+#~ msgid "URL"
+#~ msgstr "АДРЕС"
+
+#~ msgid "Title to use (must be used with --add-feed)"
+#~ msgstr "Използвано заглавие (изисква и опцията „--add-feed“)"
+
+#~ msgid "- start the feeds indexer"
+#~ msgstr "— стартиране на индексирането на емисии"
+
+#~ msgid "Adding a feed requires --add-feed and --title"
+#~ msgstr ""
+#~ "Добавянето на емисия изисква задаването и на двете опции: „--add-feed“ и "
+#~ "„--title“"
+
+#~ msgid "Could not add feed"
+#~ msgstr "Не може да се добави емисия"
+
+#~ msgid "Tracker RSS/ATOM Feeds Miner"
+#~ msgstr "Анализатор на емисиите по RSS/ATOM"
+
+#~ msgid "Fetch RSS/ATOM feeds"
+#~ msgstr "Изтегляне на емисиите по RSS/ATOM"
+
+#~ msgid "Userguides"
+#~ msgstr "Ръководства"
+
+#~ msgid "Userguide data miner"
+#~ msgstr "Анализатор на потребителските ръководства"
+
+#~ msgid "- start the user guides data miner"
+#~ msgstr "— стартиране на анализа на потребителските ръководства"
+
+#~ msgid "Tracker User Guides Miner"
+#~ msgstr "Анализатор на потребителските ръководства"
+
+#~ msgid "Crawls and processes user guides in shared areas"
+#~ msgstr ""
+#~ "Индексиране на потребителските ръководства в споделените части на "
+#~ "файловата система"
+
+#~ msgid "Emails"
+#~ msgstr "Е-писма"
+
+#~ msgid "Evolution Email miner"
+#~ msgstr "Анализатор на писмата в Evolution"
+
+#~ msgid "Tracker"
+#~ msgstr "Индексиране"
+
+#~ msgid "Push data to Tracker to make it queryable."
+#~ msgstr ""
+#~ "Подаване на информация към индексирането, за да може да се търси в нея"
+
+#~ msgid "Processing…"
+#~ msgstr "Обработка…"
+
+#~ msgid "Tags"
+#~ msgstr "Етикети"
+
+#, c-format
+#~ msgid "_Set the tags you want to associate with the %d selected item:"
+#~ msgid_plural ""
+#~ "_Set the tags you want to associate with the %d selected items:"
+#~ msgstr[0] "_Задаване на етикетите за %d избран обект:"
+#~ msgstr[1] "_Задаване на етикетите за %d избрани обекта:"
+
+#~ msgid "Extractor"
+#~ msgstr "Извличаща програма"
+
+#~ msgid "Metadata extractor"
+#~ msgstr "Програма извличаща метаданните"
+
+#~ msgid "Max bytes to extract"
+#~ msgstr "Максимален брой байтове за извличане"
+
+#~ msgid "Maximum number of UTF-8 bytes to extract."
+#~ msgstr "Максимален размер байтове за извличане от UTF-8."
+
+#~ msgid "Max media art width"
+#~ msgstr "Максимална широчина на медиен файл"
+
+#~ msgid ""
+#~ "Maximum width in pixels for any media art extracted. Anything bigger is "
+#~ "resized. Set to -1 to disable saving media art from files. Setting to 0 "
+#~ "sets no limit on the media art width."
+#~ msgstr ""
+#~ "Максимална широчина в пиксели за извлечен медиен файл. Когато броят е "
+#~ "надвишен, файлът се преоразмерява. Стойността „-1“ изключва запазването "
+#~ "на медия от файлове. Стойността „0“ изключва преоразмеряването."
+
+#~ msgid "Wait for FS miner to be done before extracting"
+#~ msgstr ""
+#~ "Изчакване на анализатора на файлови системи да приключи работа, преди да "
+#~ "започне извличането"
+
+#~ msgid ""
+#~ "When true, tracker-extract will wait for tracker-miner-fs to be done "
+#~ "crawling before extracting meta-data. This option is useful on "
+#~ "constrained environment where it is important to list files as fast as "
+#~ "possible and can wait to get meta-data later."
+#~ msgstr ""
+#~ "Когато е опцията е зададена, „tracker-extract“ ще изчака „tracker-miner-"
+#~ "fs“ да обходи файловите системи, преди да започне извличането на "
+#~ "метаданните. Такава настройка е за системи с малко ресурси, когато е "
+#~ "важно откриването на файловете да се извърши колкото може по-бързо, а за "
+#~ "метаданните може да се изчака."
+
+#~ msgid "Metadata extraction failed"
+#~ msgstr "Неуспешно извличане на метаданни"
+
+#~ msgid "No metadata or extractor modules found to handle this file"
+#~ msgstr "Няма модул, който може да извлече данни или метаданни от този файл"
+
+#~ msgid ""
+#~ "Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug "
+#~ "(default = 0)"
+#~ msgstr ""
+#~ "Подробност на журнални съобщения: „0“ (само грешки), „1“ (минимална), "
+#~ "„2“ (подробна) и „3“ (най-подробна). Стандартно е „0“."
+
+#~ msgid "File to extract metadata for"
+#~ msgstr "Файл, за който да се извлекат метаданните"
+
+#~ msgid "MIME type for file (if not provided, this will be guessed)"
+#~ msgstr "Вид по MIME на файла (ако не е зададен, ще бъде отгатнат)"
+
+#~ msgid "MIME"
+#~ msgstr "ВИД_ПО_MIME"
+
+#~ msgid ""
+#~ "Force a module to be used for extraction (e.g. \"foo\" for \"foo.so\")"
+#~ msgstr "Изрично задаване на модул за извличането (напр. „foo“ за „foo.so“)"
+
+#~ msgid "MODULE"
+#~ msgstr "МОДУЛ"
+
+#~ msgid "- Extract file meta data"
+#~ msgstr "— извличане на метаданните на файла"
+
+#~ msgid "Filename and mime type must be provided together"
+#~ msgstr "Името на файла и вида по MIME трябва да се дадат заедно"
+
+#~ msgid "Tracker Metadata Extractor"
+#~ msgstr "Модул за извличане на метаданни"
+
+#~ msgid "Extracts metadata from local files"
+#~ msgstr "Извличане на метаданни за локалните файлове"
+
+#~ msgid "Default View"
+#~ msgstr "Стандартен изглед"
+
+#~ msgid "Desktop Search"
+#~ msgstr "Търсене на компютъра"
+
+#~ msgid ""
+#~ "Find what you're looking for on this computer by name or content using "
+#~ "Tracker"
+#~ msgstr "Претърсване на данните върху този компютър чрез Tracker"
+
+#~ msgid ""
+#~ "Display results by category, for example, Music, Videos, Applications, "
+#~ "etc. This includes searching the contents of files where applicable."
+#~ msgstr ""
+#~ "Извеждане на резултатите по категории, напр. Музика, Видео, Програми и т."
+#~ "н. Това включва и търсенето в съдържанието на файловете, когато това се "
+#~ "налага."
+
+#~ msgid "Display results by files found in a list"
+#~ msgstr "Показване на резултатите като списък"
+
+#~ msgid "Display found images"
+#~ msgstr "Показване на откритите изображения"
+
+#~ msgid "Find search criteria inside files"
+#~ msgstr "Критерии за търсене в съдържанието на файловете"
+
+#~ msgid "Find search criteria in file titles"
+#~ msgstr "Критерии за търсенето в името на файловете"
+
+#~ msgid "Find search criteria in file tags only (separated by comma)"
+#~ msgstr "Критерии за търсенето в името на файловете (разделени с „,“)"
+
+#~ msgid "_Search:"
+#~ msgstr "_Търсене:"
+
+#~ msgid "Show tagging panel which allows editing tags of selected results"
+#~ msgstr ""
+#~ "Показване на панела за етикети, с който могат за се редактират етикетите "
+#~ "на избраните резултати"
+
+#~ msgid "Show statistics about the data stored"
+#~ msgstr "Извеждане на статистика за съхранените данни"
+
+#, no-c-format
+#~ msgid "_Set the tags you want to associate with the %d selected items:"
+#~ msgstr "_Задаване на етикетите за %d избрани обекта:"
+
+#~ msgid "Add tag"
+#~ msgstr "Добавяне на етикет"
+
+#~ msgid "Remove selected tag"
+#~ msgstr "Премахване на избрания етикет"
+
+#~ msgid "Search criteria was too generic"
+#~ msgstr "Прекалено общи критерии за търсене"
+
+#~ msgid "Only the first 500 items will be displayed"
+#~ msgstr "Само първите 500 резултата ще бъдат показани"
+
+#~ msgid "Print version"
+#~ msgstr "Извеждане на версията"
+
+#~ msgid "[SEARCH-CRITERIA]"
+#~ msgstr "[КРИТЕРИИ_ЗА_ТЪРСЕНЕ]"
+
+#~ msgid "Desktop Search user interface using Tracker"
+#~ msgstr "Търсене с помощта на Tracker"
+
+#~ msgid ""
+#~ "The statistics represented here do not reflect their availability, rather "
+#~ "the total data stored:"
+#~ msgstr ""
+#~ "Изведената статистика не отговаря на наличността на данните, а на общото "
+#~ "количество съхранени данни:"
+
+#~ msgid "Tag"
+#~ msgid_plural "Tags"
+#~ msgstr[0] "Етикет"
+#~ msgstr[1] "Етикети"
+
+#~ msgid "Contact"
+#~ msgid_plural "Contacts"
+#~ msgstr[0] "Контакт"
+#~ msgstr[1] "Контакти"
+
+#~ msgid "Audio"
+#~ msgid_plural "Audios"
+#~ msgstr[0] "Аудио клип"
+#~ msgstr[1] "Аудио клипове"
+
+#~ msgid "Document"
+#~ msgid_plural "Documents"
+#~ msgstr[0] "Документ"
+#~ msgstr[1] "Документи"
+
+#~ msgid "File"
+#~ msgid_plural "Files"
+#~ msgstr[0] "Файл"
+#~ msgstr[1] "Файлове"
+
+#~ msgid "Folder"
+#~ msgid_plural "Folders"
+#~ msgstr[0] "Папка"
+#~ msgstr[1] "Папки"
+
+#~ msgid "Image"
+#~ msgid_plural "Images"
+#~ msgstr[0] "Изображение"
+#~ msgstr[1] "Изображения"
+
+#~ msgid "Application"
+#~ msgid_plural "Applications"
+#~ msgstr[0] "Програма"
+#~ msgstr[1] "Програми"
+
+#~ msgid "Video"
+#~ msgid_plural "Videos"
+#~ msgstr[0] "Видео клип"
+#~ msgstr[1] "Видео клипове"
+
+#~ msgid "Album"
+#~ msgid_plural "Albums"
+#~ msgstr[0] "Албум"
+#~ msgstr[1] "Албуми"
+
+#~ msgid "Music Track"
+#~ msgid_plural "Music Tracks"
+#~ msgstr[0] "Музикално парче"
+#~ msgstr[1] "Музикални парчета"
+
+#~ msgid "Photo"
+#~ msgid_plural "Photos"
+#~ msgstr[0] "Фотография"
+#~ msgstr[1] "Фотографии"
+
+#~ msgid "Playlist"
+#~ msgid_plural "Playlists"
+#~ msgstr[0] "Списък за изпълнение"
+#~ msgstr[1] "Списъци за изпълнение"
+
+#~ msgid "Email"
+#~ msgid_plural "Emails"
+#~ msgstr[0] "Е-писмо"
+#~ msgstr[1] "Е-писма"
+
+#~ msgid "Bookmark"
+#~ msgid_plural "Bookmarks"
+#~ msgstr[0] "Отметка"
+#~ msgstr[1] "Отметки"
+
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#~ msgid "No items currently selected"
+#~ msgstr "Нищо не е избрано"
+
+#~ msgid "Could not update tags"
+#~ msgstr "Етикетите не могат да се обновят"
+
+#~ msgid "Could not remove tag"
+#~ msgstr "Етикетът не може да се изтрие"
+
+#~ msgid "Could not retrieve tags for the current selection"
+#~ msgstr "Етикетите за текущо избраните обекти не могат да бъдат получени"
+
+#~ msgid "Could not add tag"
+#~ msgstr "Не може да се добави етикет"
+
+#~ msgid "Could not update tags for file"
+#~ msgstr "Етикетите на файла не може да се обновяват"
+
+#, no-c-format
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "Today"
+#~ msgstr "Днес"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Утре"
+
+#~ msgid "Yesterday"
+#~ msgstr "Вчера"
+
+#, c-format
+#~ msgid "%ld day from now"
+#~ msgid_plural "%ld days from now"
+#~ msgstr[0] "След %ld ден"
+#~ msgstr[1] "След %ld дена"
+
+#, c-format
+#~ msgid "%ld day ago"
+#~ msgid_plural "%ld days ago"
+#~ msgstr[0] "Преди %ld ден"
+#~ msgstr[1] "Преди %ld дена"
+
+#~ msgid "Less than one second"
+#~ msgstr "По-малко от секунда"
+
+#~ msgid "No Search Results"
+#~ msgstr "Не са открити резултати"
+
+#~ msgid ""
+#~ "Select the view on the toolbar for the content you want, e.g. everything, "
+#~ "files or just images"
+#~ msgstr ""
+#~ "Изберете изгледа за съдържанието чрез летата с инструменти, напр. всичко, "
+#~ "файлове или само изображения."
+
+#~ msgid "Start to search using the entry box above"
+#~ msgstr "Започване на търсенето чрез прозореца за въвеждане отгоре"
+
+#~ msgid "Last Changed"
+#~ msgstr "Последна промяна"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "Music"
+#~ msgstr "Музика"
+
+#~ msgid "Images"
+#~ msgstr "Изображения"
+
+#~ msgid "Videos"
+#~ msgstr "Видео"
+
+#~ msgid "Documents"
+#~ msgstr "Документи"
+
+#~ msgid "Mail"
+#~ msgstr "Поща"
+
+#~ msgid "Folders"
+#~ msgstr "Папки"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Отметки"
+
+#~ msgid "Items"
+#~ msgstr "Обекти"
+
+#~ msgid "Loading…"
+#~ msgstr "Зареждане…"
+
+#, c-format
+#~ msgid "%d Page"
+#~ msgid_plural "%d Pages"
+#~ msgstr[0] "%d страница"
+#~ msgstr[1] "%d страници"
+
+#~ msgid "_Show Parent Directory"
+#~ msgstr "Показване на _съдържащата папка"
+
+#~ msgid "_Tags…"
+#~ msgstr "_Етикети…"
+
+#~ msgid "Search and Indexing"
+#~ msgstr "Търсене и индексиране"
+
+#~ msgid "Configure file indexing with Tracker"
+#~ msgstr "Настройване на индексирането на файлове чрез Tracker"
+
+#~ msgid "Indexing Preferences"
+#~ msgstr "Настройки на индексирането"
+
+#~ msgid "_Monitor file and directory changes"
+#~ msgstr "_Следене за промени по файловете и папките"
+
+#~ msgid "Enable when running on _battery"
+#~ msgstr "Индексиране и при захранване от _батерии"
+
+#~ msgid "Enable for _initial data population"
+#~ msgstr "Включване за _първоначалното извличане на данни"
+
+#~ msgid "Include _removable media"
+#~ msgstr "Индексиране и на _преносимите носители на данни"
+
+#~ msgid "This covers ALL removable media, memory cards, CDs, DVDs, etc."
+#~ msgstr ""
+#~ "Това включва всички преносими носители, в това число: карти за памет, CD, "
+#~ "DVD- дискове и т.н."
+
+#~ msgid "Include optical di_scs"
+#~ msgstr "Индексиране и на _оптичните дискове"
+
+#~ msgid "Semantics"
+#~ msgstr "Семантика"
+
+#~ msgid ""
+#~ "The  scheduler  is  the kernel component that decides which runnable "
+#~ "application will be executed by the CPU next.  Each application has an "
+#~ "associated scheduling  policy and priority.\n"
+#~ "\n"
+#~ "This option allows you to make Tracker take a back seat and not eat up "
+#~ "too much CPU time if you have other applications more deserving of it."
+#~ msgstr ""
+#~ "Диспечерът е компонентът на ядрото, който решава коя програма да се "
+#~ "изпълнява в даден момент от процесора. За всяка програма има политика и "
+#~ "приоритет на диспечера.\n"
+#~ "\n"
+#~ "Тази опция кара Tracker да се изпълнява във фонов режим, като не използва "
+#~ "прекалено много процесорно време, ако някоя друга програма се нуждае от "
+#~ "такова."
+
+#~ msgid "Index content in the background:"
+#~ msgstr "Индексиране на съдържанието във фонов режим:"
+
+#~ msgid "O_nly when computer is not being used"
+#~ msgstr "_Само когато компютърът не се използва"
+
+#~ msgid ""
+#~ "Indexing content will be <b>much slower</b> but other applications will "
+#~ "have priority."
+#~ msgstr ""
+#~ "Индексирането на съдържанието ще е <b>много по-бавно</b>, а другите "
+#~ "програми ще са с приоритет."
+
+#~ msgid ""
+#~ "_While other applications are running, except for initial data population"
+#~ msgstr "Във _фонов режим, освен за първоначалното индексиране."
+
+#~ msgid ""
+#~ "Indexing content will be <b>much slower</b> but other applications will "
+#~ "have priority. This will only be the case on the <b>first index</b> of "
+#~ "your content after you start your computer from a new install"
+#~ msgstr ""
+#~ "Индексирането на съдържанието ще е <b>много по-бавно</b>, а другите "
+#~ "програми ще са с приоритет. Това поведение е само за <b>първоначалното "
+#~ "индексиране</b> на съдържанието — при първото стартиране на компютъра "
+#~ "сред инсталиране."
+
+#~ msgid "While _other applications are running"
+#~ msgstr "_Заедно с другите програми"
+
+#~ msgid ""
+#~ "Indexing content will be as <b>fast</b> as possible but other "
+#~ "applications may suffer and be slower as a result."
+#~ msgstr ""
+#~ "Индексирането на съдържанието ще е възможно <b>най-бързо</b>, но като "
+#~ "резултат другите програми може да са по-бавни."
+
+#~ msgid "Stop indexing when _disk space is below:"
+#~ msgstr "Спиране на _индексирането, ако свободното пространство е под:"
+
+#~ msgid "Limitations"
+#~ msgstr "Ограничения"
+
+#~ msgid ""
+#~ "Indexed content from removable devices that have not been inserted for a "
+#~ "while, are cleaned up to avoid build up of unused resources."
+#~ msgstr ""
+#~ "Индексите за съдържанието на преносими устройства, които не са поставяни "
+#~ "известно време в компютъра, се изчистват, за да се освободи пространство."
+
+#~ msgid "Days before deleting removable devices:"
+#~ msgstr "Дни преди изтриваното на индексите за преносими устройства"
+
+#~ msgid "Garbage Collection"
+#~ msgstr "Събиране на боклука"
+
+#~ msgid "Indexing"
+#~ msgstr "Индексиране"
+
+#~ msgid ""
+#~ "Special locations such as your <b>Home</b>, <b>Desktop</b> or "
+#~ "<b>Documents</b> directory, can be easily toggled below. This will add or "
+#~ "remove their real paths from the list underneath.\n"
+#~ "\n"
+#~ "If a directory is toggled to <b>Recurse</b>, it means that all sub-"
+#~ "directories underneath it will also be indexed. Otherwise, only files "
+#~ "immediately in that directory will be indexed."
+#~ msgstr ""
+#~ "Специалните папки като <b>Домашната</b>, <b>Плота</b> или <b>Документите</"
+#~ "b> могат да се превключват отдолу — това добавя или премахва истинските "
+#~ "пътища до тях в списъка отдолу.\n"
+#~ "\n"
+#~ "Ако за папка е включено <b>рекурсивно</b> обхождане, всички подпапки "
+#~ "навътре в нея също ще бъдат индексирани. В противен случай се индексират "
+#~ "само файловете директно в нея."
+
+#~ msgid "Index Home Directory"
+#~ msgstr "Индексиране на домашната папка"
+
+#~ msgid "Index Desktop Directory"
+#~ msgstr "Индексиране на папката на работния плот"
+
+#~ msgid "Index Documents Directory"
+#~ msgstr "Индексиране на папката за документи"
+
+#~ msgid "Index Music Directory"
+#~ msgstr "Индексиране на папката за музика"
+
+#~ msgid "Index Pictures Directory"
+#~ msgstr "Индексиране на папката за изображения"
+
+#~ msgid "Index Videos Directory"
+#~ msgstr "Индексиране на папката за видео"
+
+#~ msgid "Index Download Directory"
+#~ msgstr "Индексиране на папката за свалени файлове"
+
+#~ msgid ""
+#~ "One or more special locations have the same path.\n"
+#~ "Those which are the same are disabled!"
+#~ msgstr ""
+#~ "Едно или повече от специалните местоположения\n"
+#~ "отговарят на един път. Съвпадащите са изключени!"
+
+#~ msgid "Add directory to be indexed"
+#~ msgstr "Добавяне на папка за индексиране"
+
+#~ msgid "Remove directory from being indexed"
+#~ msgstr "Спиране на индексиране на папка"
+
+#~ msgid "Where is your content?"
+#~ msgstr "Къде е съдържанието за индексиране?"
+
+#~ msgid "Locations"
+#~ msgstr "Местоположения"
+
+#~ msgid "Glob patterns to ignore:"
+#~ msgstr "Шаблони за прескачане:"
+
+#~ msgid "Opens text entry for glob patterns"
+#~ msgstr "Отваряне на прозорец за въвеждане на шаблони за прескачане"
+
+#~ msgid "Opens the filechooser dialogue"
+#~ msgstr "Отваряне на прозорец за избор на файлове"
+
+#~ msgid "With specific files:"
+#~ msgstr "Конкретно следните файлове:"
+
+#~ msgid "Directories"
+#~ msgstr "Папки"
+
+#~ msgid ""
+#~ "Globbing patterns can be used here, for example: \"*bar*\".\n"
+#~ "Most commonly this is used to ignore directories like *~, *.o, *.la, etc"
+#~ msgstr ""
+#~ "Могат да се използват шаблони като за обвивката, напр.: „*bar*“.\n"
+#~ "Най-често се използва за папки като „*~“, „*.o“, „*.la“ и т.н."
+
+#~ msgid "Files"
+#~ msgstr "Файлове"
+
+#~ msgid "Ignored Content"
+#~ msgstr "Прескачано съдържание"
+
+#~ msgid "Index content of _files found"
+#~ msgstr "Индексиране на _съдържанието на откритите файлове"
+
+#~ msgid "Index _numbers"
+#~ msgstr "Индексиране на _числата"
+
+#~ msgid "What is indexed?"
+#~ msgstr "Какво да се индексира?"
+
+#~ msgid "Control"
+#~ msgstr "Управление"
+
+#~ msgid ""
+#~ "When resetting your indexed data, the databases are removed and your "
+#~ "files will no longer be indexed. Upon next start, Tracker will then start "
+#~ "indexing data as if it was being run for the first time.\n"
+#~ "\n"
+#~ "<b>Warning: All indexes and caches for your data will be removed! They "
+#~ "can not be retrieved! Your REAL data and files will not be touched.</b>\n"
+#~ "\n"
+#~ "Clicking this button will close the preferences too."
+#~ msgstr ""
+#~ "При изчистването на индексираното се изтриват базите от данни с "
+#~ "резултатите от анализа на файловете. При следващото стартиране на "
+#~ "компютъра Tracker ще започне първоначално индексиране.\n"
+#~ "\n"
+#~ "<b>Предупреждение: Индексите и временните данни ще бъдат изтрити и ще "
+#~ "трябва да бъдат генерирани наново. Същинските файлове и данни НЯМА да "
+#~ "бъдат променяни.</b>\n"
+#~ "\n"
+#~ "С натискането на бутона ще затворите и прозореца за настройките."
+
+#~ msgid "Yes, remove all indexes"
+#~ msgstr "Изтриване на всички индекси"
+
+#~ msgid ""
+#~ "An 'index' is an ordered referenced to a piece of data. We use indexes to "
+#~ "be able to quickly find your information and content."
+#~ msgstr ""
+#~ "Индексът е подреден списък от препратки към определени данни. Чрез "
+#~ "индексите може да се търси много по-бързо."
+
+#~ msgid "Reset Indexed Data"
+#~ msgstr "Изчистване на индексираните данни"
+
+#~ msgid "_Delay"
+#~ msgstr "_Забавяне"
+
+#~ msgid "seconds"
+#~ msgstr "Секунди"
+
+#~ msgid "Start up"
+#~ msgstr "Стартиране"
+
+#~ msgid "System"
+#~ msgstr "Система"
+
+#~ msgid "Directory"
+#~ msgstr "Папка"
+
+#~ msgid ""
+#~ "The changes you have made to your preferences here require a reindex to "
+#~ "ensure all your data is correctly indexed as you have requested."
+#~ msgstr ""
+#~ "Тези промени по настройките изискват индексиране наново, за да се "
+#~ "удовлетворят изискванията."
+
+#~ msgid "This will close this dialog!"
+#~ msgstr "Това ще затвори този прозорец."
+
+#~ msgid "Would you like to reindex now?"
+#~ msgstr "Искате ли новото индексиране да започне?"
+
+#~ msgid "Reindex"
+#~ msgstr "Ново индексиране"
+
+#~ msgid "Do nothing"
+#~ msgstr "Нищо да не се прави"
+
+#~ msgid ""
+#~ "The changes you have made to your preferences require restarting tracker "
+#~ "processes."
+#~ msgstr ""
+#~ "Тези промени по настройките изискват рестартиране на индексиращите "
+#~ "процеси."
+
+#~ msgid "Would you like to restart now?"
+#~ msgstr "Желаете ли да ги рестартирате сега?"
+
+#~ msgid "Restart Tracker"
+#~ msgstr "Рестартиране на индексирането"
+
+#~ msgid "Disabled"
+#~ msgstr "Изключено"
+
+#~ msgid "Enter value"
+#~ msgstr "Въведете стойност"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Отмяна"
+
+#~ msgid "_OK"
+#~ msgstr "_Добре"
+
+#~ msgid "Select directory"
+#~ msgstr "Избор на папка"
+
+#~ msgid "That directory is already selected as a location to index"
+#~ msgstr "Папката вече е била отбелязана за индексиране"
+
+#~ msgid "Recurse"
+#~ msgstr "Рекурсивно"
+
+#~ msgid "Desktop Search preferences"
+#~ msgstr "Настройки на търсенето"
+
+#~ msgid "Force a re-index of all content"
+#~ msgstr "Ново индексиране на всички данни"
+
+#~ msgid "- start the tracker daemon"
+#~ msgstr "— стартиране на демона за индексиране"
+
+#~ msgid "Tracker Store"
+#~ msgstr "Съхранение на индексите"
+
+#~ msgid "Metadata database store and lookup manager"
+#~ msgstr "Управление на съхранението и запитването към базата от метаданни"
+
+#~ msgid "GraphUpdated delay"
+#~ msgstr "Лаг на GraphUpdated"
+
+#~ msgid ""
+#~ "Period in milliseconds between GraphUpdated signals being emitted when "
+#~ "indexed data has changed inside the database."
+#~ msgstr ""
+#~ "Период в милисекунди преди да се излъчат сигнали към GraphUpdated, че "
+#~ "индексите са се променили в базата от данни."
+
+#, c-format
+#~ msgid "Could not get GSettings for miners, manager could not be created, %s"
+#~ msgstr ""
+#~ "Настройките за анализаторите не могат да се получат от GSettings. "
+#~ "Управлението им не може да се стартира, %s"
+
+#~ msgid "The 'tracker-control' command is no longer available"
+#~ msgstr "Командата „tracker-control“ вече не съществува"
+
+#~ msgid "Unavailable"
+#~ msgstr "Липсва"
+
+#~ msgid "Initializing"
+#~ msgstr "Инициализиране"
+
+#~ msgid "Fetching…"
+#~ msgstr "Получаване…"
+
+#, c-format
+#~ msgid "Crawling single directory '%s'"
+#~ msgstr "Нерекурсивно индексиране на папка „%s“"
+
+#, c-format
+#~ msgid "Crawling recursively directory '%s'"
+#~ msgstr "Рекурсивно индексиране на папка „%s“"
+
+#~ msgid "Paused"
+#~ msgstr "На пауза"
+
+#~ msgid "Idle"
+#~ msgstr "Бездействие"
+
+#~ msgid "Follow status changes as they happen"
+#~ msgstr "Проследяване на промяната на състоянието"
+
+#~ msgid ""
+#~ "Watch changes to the database in real time (e.g. resources or files being "
+#~ "added)"
+#~ msgstr ""
+#~ "Следене на промените в базата от данни в реално време (напр. добавянето "
+#~ "на файлове или други ресурси)"
+
+#~ msgid "ONTOLOGY"
+#~ msgstr "ОНТОЛОГИЯ"
+
+#~ msgid "List common statuses for miners and the store"
+#~ msgstr ""
+#~ "Извеждане на общото състояние на анализиращите и съхраняващите процеси"
+
+#~ msgid "Pause a miner (you must use this with --miner)"
+#~ msgstr "Пауза на анализатор (трябва да използвате и опцията „--miner“)"
+
+#~ msgid "REASON"
+#~ msgstr "ПРИЧИНА"
+
+#~ msgid ""
+#~ "Pause a miner while the calling process is alive or until resumed (you "
+#~ "must use this with --miner)"
+#~ msgstr ""
+#~ "Пауза на анализатор докато извикващия го процес е активен или подновен "
+#~ "(трябва да използвате и опцията „--miner“)"
+
+#~ msgid "Resume a miner (you must use this with --miner)"
+#~ msgstr ""
+#~ "Продължаване на работата на анализатор (трябва да използвате и опцията „--"
+#~ "miner“)"
+
+#~ msgid "COOKIE"
+#~ msgstr "БИСКВИТКА"
+
+#~ msgid ""
+#~ "Miner to use with --resume or --pause (you can use suffixes, e.g. Files "
+#~ "or Applications)"
+#~ msgstr ""
+#~ "Анализатор, на който да се прати „--resume“ или „--pause“ (може да "
+#~ "ползвате суфикси като „Файлове“ или „Програми“)"
+
+#~ msgid "MINER"
+#~ msgstr "АНАЛИЗАТОР"
+
+#~ msgid "List all miners currently running"
+#~ msgstr "Извеждане на всички анализатори работещи в момента"
+
+#~ msgid "List all miners installed"
+#~ msgstr "Извеждане на всички инсталирани анализатори"
+
+#~ msgid "List pause reasons"
+#~ msgstr "Извеждане на причините за паузата"
+
+#~ msgid "List all Tracker processes"
+#~ msgstr "Извеждане на всички процеси по индексирането"
+
+#~ msgid ""
+#~ "Use SIGKILL to stop all matching processes, either \"store\", \"miners\" "
+#~ "or \"all\" may be used, no parameter equals \"all\""
+#~ msgstr ""
+#~ "Спиране на всички отговарящи процеси със „SIGKILL“. Вариантите са "
+#~ "„store“ (съхраняващи), „miners“ (анализатори) или „all“ (всички). Ако не "
+#~ "е подадена стойност, стандартната е „all“."
+
+#~ msgid "APPS"
+#~ msgstr "ПРОГРАМИ"
+
+#~ msgid ""
+#~ "Use SIGTERM to stop all matching processes, either \"store\", \"miners\" "
+#~ "or \"all\" may be used, no parameter equals \"all\""
+#~ msgstr ""
+#~ "Спиране на всички отговарящи процеси със „SIGTERM“. Вариантите са "
+#~ "„store“ (съхраняващи), „miners“ (анализатори) или „all“ (всички). Ако не "
+#~ "е подадена стойност, стандартната е „all“."
+
+#~ msgid "Starts miners (which indirectly starts tracker-store too)"
+#~ msgstr ""
+#~ "Стартиране на анализаторите (което води до стартирането и на процесите по "
+#~ "съхранение)"
+
+#~ msgid ""
+#~ "Sets the logging verbosity to LEVEL ('debug', 'detailed', 'minimal', "
+#~ "'errors') for all processes"
+#~ msgstr ""
+#~ "Задаване на ПОДРОБНОСТта на журналните съобщения за всички процеси. "
+#~ "Възможните стойности са „debug“ (най-подробна), „detailed“ (подробна), "
+#~ "„minimal“ (минимална), „errors“ (само грешки)."
+
+#~ msgid "LEVEL"
+#~ msgstr "ПОДРОБНОСТ"
+
+#~ msgid "Show logging values in terms of log verbosity for each process"
+#~ msgstr "Извеждане на подробността на журналните съобщения за всеки процес"
+
+#, c-format
+#~ msgid "Could not get status from miner: %s"
+#~ msgstr "Не може да бъде получено състоянието на анализатора: %s"
+
+#, c-format
+#~ msgid "%s remaining"
+#~ msgstr "остава: %s"
+
+#~ msgid "unknown time left"
+#~ msgstr "остава: неизвестно време"
+
+#~ msgid "PAUSED"
+#~ msgstr "ПАУЗА"
+
+#~ msgid "Not running or is a disabled plugin"
+#~ msgstr "Приставката не работи в момента или е изключена за постоянно"
+
+#~ msgid "Could not retrieve tracker-store status"
+#~ msgstr ""
+#~ "Състоянието на процеса за съхранение на индексите „tracker-store“ не може "
+#~ "да бъде получено"
+
+#~ msgid "Could not retrieve tracker-store progress"
+#~ msgstr ""
+#~ "Напредъкът на процеса за съхранение на индексите „tracker-store“ не може "
+#~ "да бъде получен"
+
+#~ msgid "Could not run SPARQL query"
+#~ msgstr "Заявката на SPARQL не може да бъде изпълнена"
+
+#~ msgid "Could not call tracker_sparql_cursor_next() on SPARQL query"
+#~ msgstr ""
+#~ "Функцията „tracker_sparql_cursor_next()“ не може да се изпълни върху "
+#~ "заявката на SPARQL"
+
+#, c-format
+#~ msgid "Could not pause miner, manager could not be created, %s"
+#~ msgstr ""
+#~ "Анализаторът не може да се постави на пауза. Не може да се създаде "
+#~ "управление на процесите: %s"
+
+#, c-format
+#~ msgid "Attempting to pause miner '%s' with reason '%s'"
+#~ msgstr "Опит за пауза на анализатор „%s“ със следната причина „%s“"
+
+#, c-format
+#~ msgid "Could not pause miner: %s"
+#~ msgstr "Анализаторът не може да бъде поставен на пауза: %s"
+
+#, c-format
+#~ msgid "Cookie is %d"
+#~ msgstr "Бисквитката е %d"
+
+#~ msgid "Press Ctrl+C to stop"
+#~ msgstr "Натиснете „Ctrl+C“ за спиране"
+
+#, c-format
+#~ msgid "Could not resume miner, manager could not be created, %s"
+#~ msgstr ""
+#~ "Работата на анализатора не може да бъде подновена, не може да се създаде "
+#~ "управление на процесите: %s"
+
+#, c-format
+#~ msgid "Attempting to resume miner %s with cookie %d"
+#~ msgstr "Опит за подновяване на работата на анализатора „%s“ с бисквитка %d"
+
+#, c-format
+#~ msgid "Could not resume miner: %s"
+#~ msgstr "Работата на анализатора не може да бъде подновена: %s"
+
+#, c-format
+#~ msgid "Could not list miners, manager could not be created, %s"
+#~ msgstr ""
+#~ "Анализаторите не могат да бъдат изведени, не може да се създаде "
+#~ "управление на процесите: %s"
+
+#, c-format
+#~ msgid "Found %d miner installed"
+#~ msgid_plural "Found %d miners installed"
+#~ msgstr[0] "Открит е %d инсталиран анализатор"
+#~ msgstr[1] "Открити са %d инсталирани анализатори"
+
+#, c-format
+#~ msgid "Found %d miner running"
+#~ msgid_plural "Found %d miners running"
+#~ msgstr[0] "Открит е %d стартиран анализатор"
+#~ msgstr[1] "Открити са %d стартирани анализатори"
+
+#, c-format
+#~ msgid "Could not get pause details, manager could not be created, %s"
+#~ msgstr ""
+#~ "Не могат да се получат подробни данни за паузата, не може да се създаде "
+#~ "управление на процесите: %s"
+
+#~ msgid "No miners are running"
+#~ msgstr "Никой анализатор не работи в момента"
+
+#~ msgid "Miners"
+#~ msgstr "Анализатори"
+
+#~ msgid "Reason"
+#~ msgstr "Причина"
+
+#~ msgid "No miners are paused"
+#~ msgstr "Никои анализатори не са спрени"
+
+#~ msgid "Only one of 'all', 'store' and 'miners' options are allowed"
+#~ msgstr ""
+#~ "Позволените стойности са „all“ (всички), „store“ (процеси по "
+#~ "съхранението) и „miners“ (анализатори)"
+
+#~ msgid "Could not get SPARQL connection"
+#~ msgstr "Не може да се установи връзка за SPARQL"
+
+#~ msgid "Now listening for resource updates to the database"
+#~ msgstr "Следене за промени по базата от данни"
+
+#~ msgid "All nie:plainTextContent properties are omitted"
+#~ msgstr "Пропуснати са всички свойства „nie:plainTextContent“"
+
+#~ msgid "Common statuses include"
+#~ msgstr "Чести състояния са"
+
+#, c-format
+#~ msgid "Could not get status, manager could not be created, %s"
+#~ msgstr ""
+#~ "Състоянието не може да бъде получено, не може да бъде създадено "
+#~ "управление на процесите: %s"
+
+#~ msgid "Store"
+#~ msgstr "Съхранение"
+
+#, c-format
+#~ msgid "Could not get display name for miner '%s'"
+#~ msgstr "Името на анализатора „%s“ не може да се получи"
+
+#~ msgid "You can not use miner pause and resume switches together"
+#~ msgstr ""
+#~ "Опциите за пауза и възобновяване на работата на анализаторите са "
+#~ "несъвместими"
+
+#~ msgid "You must provide the miner for pause or resume commands"
+#~ msgstr ""
+#~ "Трябва да укажете кой анализатор да се постави на пауза или да се "
+#~ "възобнови работата му"
+
+#~ msgid "You must provide a pause or resume command for the miner"
+#~ msgstr ""
+#~ "Трябва да укажете команда за пауза или възобновяване на работата на "
+#~ "анализатора"
+
+#~ msgid "You can not use the --kill and --terminate arguments together"
+#~ msgstr "Опциите „--kill“ и „--terminate“ са несъвместими"
+
+#~ msgid ""
+#~ "You can not use the --get-logging and --set-logging arguments together"
+#~ msgstr "Опциите „--get-logging“ и „--set-logging“ са несъвместими"
+
+#~ msgid ""
+#~ "Invalid log verbosity, try 'debug', 'detailed', 'minimal' or 'errors'"
+#~ msgstr ""
+#~ "Неправилна стойност за подробността на журналните съобщения. Възможните "
+#~ "стойности са: „errors“ (само грешки), „minimal“ (минимална), "
+#~ "„detailed“ (подробна) и „debug“ (най-подробна)"
+
+#, c-format
+#~ msgid "Found process ID %d for '%s'"
+#~ msgstr "Открит е процес %d отговарящ на командата „%s“"
+
+#~ msgid "Components"
+#~ msgstr "Компоненти"
+
+#~ msgid "Only those with config listed"
+#~ msgstr "Само тези в настройките"
+
+#, c-format
+#~ msgid "Setting log verbosity for all components to '%s'…"
+#~ msgstr ""
+#~ "Задаване на подробността на журналните съобщения за всички процеси да е "
+#~ "„%s“…"
+
+#~ msgid "Starting miners…"
+#~ msgstr "Стартиране на анализаторите…"
+
+#, c-format
+#~ msgid "Could not start miners, manager could not be created, %s"
+#~ msgstr "Анализаторите и управлението не могат да се стартират: %s"
+
+#~ msgid "perhaps a disabled plugin?"
+#~ msgstr "възможна причина е спряна приставка"
+
+#~ msgid ""
+#~ "If no arguments are given, the status of the store and data miners is "
+#~ "shown"
+#~ msgstr ""
+#~ "Без аргументи се извежда състоянието и на анализаторите и на процесите по "
+#~ "съхранението"
+
+#~ msgid "Could not get D-Bus connection"
+#~ msgstr "Не може да се установи връзка с D-BUS"
+
+#~ msgid "Could not create D-Bus proxy to tracker-store"
+#~ msgstr "Не може да се създаде посредник през D-Bus към „tracker-store“"
+
+#~ msgid ""
+#~ "Tell miners to reindex files which match the mime type supplied (for new "
+#~ "extractors), use -m MIME1 -m MIME2"
+#~ msgstr ""
+#~ "Задаване на видовете по MIME за файловете, които да се индексират наново. "
+#~ "Повече видове се задават с повтаряне: „-m ВИД_1 -m ВИД_2“"
+
+#~ msgid "Tell miners to (re)index a given file"
+#~ msgstr "Анализаторите да индексират (наново) определен вид файлове"
+
+#~ msgid "Backup current index / database to the file provided"
+#~ msgstr "Резервно копиране на индексите/базите от данни към указания файл"
+
+#~ msgid "Restore a database from a previous backup (see --backup)"
+#~ msgstr ""
+#~ "Възстановяване на базата от данни от резервно копие (вж. „--backup“)"
+
+#~ msgid "Import a dataset from the provided file (in Turtle format)"
+#~ msgstr "Внасяне на данни от указания файл във формат „Turtle“"
+
+#, c-format
+#~ msgid "Could not reindex mimetypes, manager could not be created, %s"
+#~ msgstr ""
+#~ "Видовете по MIME не могат да бъдат индексирани наново, не може да се "
+#~ "създаде управление на процесите: %s"
+
+#~ msgid "Could not reindex mimetypes"
+#~ msgstr "Видовете по MIME не могат да бъдат индексирани наново"
+
+#~ msgid "Reindexing mime types was successful"
+#~ msgstr "Успешно ново индексиране на видовете по MIME"
+
+#, c-format
+#~ msgid "Could not (re)index file, manager could not be created, %s"
+#~ msgstr ""
+#~ "Файлът не може да се индексира (наново), не може да се създаде управление "
+#~ "на процесите: %s"
+
+#~ msgid "Could not (re)index file"
+#~ msgstr "Файлът не може да се индексира (наново)"
+
+#~ msgid "(Re)indexing file was successful"
+#~ msgstr "Успешно ново индексиране на файл"
+
+#~ msgid "Importing Turtle file"
+#~ msgstr "Внасяне на файлове във формат „Turtle“"
+
+#~ msgid "Unable to import Turtle file"
+#~ msgstr "Файловете във формат „Turtle“ не могат да се внесат"
+
+#~ msgid "Restoring database from backup"
+#~ msgstr "Възстановяване на базата от данни от резервно копие"
+
+#~ msgid ""
+#~ "Only one action (--backup, --restore, --index-file or --import) can be "
+#~ "used at a time"
+#~ msgstr ""
+#~ "Може да задавате само по едно действие — „--backup“ (резервно копие), „--"
+#~ "restore“ (възстановяване от резервно копие), „--index-file“ (индексиране "
+#~ "на файл) или „--import“ (внасяне)"
+
+#~ msgid "Missing one or more files which are required"
+#~ msgstr "Не сте задали файл, а трябва"
+
+#~ msgid "Only one file can be used with --backup and --restore"
+#~ msgstr "С опциите „--backup“ и „--restore“ може да се задава само един файл"
+
+#~ msgid ""
+#~ "Actions (--backup, --restore, --index-file and --import) can not be used "
+#~ "with --reindex-mime-type"
+#~ msgstr ""
+#~ "Опциите за действия — „--backup“, „--restore“, „--index-file“ или „--"
+#~ "import“ са несъвместими с „--reindex-mime-type“"
+
+#~ msgid "Show full namespaces (i.e. don't use nie:title, use full URLs)"
+#~ msgstr ""
+#~ "Извеждане на пълните пространства от имена (т.е. да не се ползват "
+#~ "съкращенията „nie:title“, а пълните адреси)"
+
+#~ msgid "Show plain text content if available for resources"
+#~ msgstr "Извеждане на неформатиран текст, ако такъв е наличен"
+
+#~ msgid ""
+#~ "Instead of looking up a file name, treat the FILE arguments as actual "
+#~ "IRIs (e.g. <file:///path/to/some/file.txt>)"
+#~ msgstr ""
+#~ "Аргументът да се тълкува не като име на ФАЙЛ, а катоl IRI "
+#~ "(интернационализиран идентификатор на ресурс) — напр. <file:///път/към/"
+#~ "някой/файл.txt>"
+
+#~ msgid "Output results as RDF in Turtle format"
+#~ msgstr "Извеждане на резултатите като RDF във формат „Turtle“"
+
+#~ msgid "Querying information for entity"
+#~ msgstr "Заявка за информация за обекта"
+
+#~ msgid "Unable to retrieve URN for URI"
+#~ msgstr ""
+#~ "Не може да се получи URN-а (име на ресурса) от URI-то (идентификатора на "
+#~ "ресурса)"
+
+#~ msgid "Unable to retrieve data for URI"
+#~ msgstr "Не могат да се получат данни от URI-то (идентификатора на ресурса)"
+
+#~ msgid "No metadata available for that URI"
+#~ msgstr "Липсват метаданни за URI-то (идентификатора на ресурса)"
+
+#~ msgid ""
+#~ "Start, stop, pause and list processes responsible for indexing content"
+#~ msgstr ""
+#~ "Стартиране, спиране, пауза, изброяване на процесите за индексиране на "
+#~ "съдържанието"
+
+#~ msgid "Show information known about local files or items indexed"
+#~ msgstr ""
+#~ "Извеждане на информация за познатите, индексирани локални файлове и обекти"
+
+#~ msgid "Backup, restore, import and (re)index by MIME type or file name"
+#~ msgstr ""
+#~ "Резервно копие, възстановяване от резервно копие, внасяне и индексиране "
+#~ "(наново) по вид MIME или име на файл"
+
+#~ msgid "Reset or remove index and revert configurations to defaults"
+#~ msgstr ""
+#~ "Изчистване/изтриване на индексите и връщане на първоначалните настройки"
+
+#~ msgid "Search for content indexed or show content by type"
+#~ msgstr ""
+#~ "Търсене в индексираното съдържание или извеждане на съдържанието по вид"
+
+#~ msgid "Show the indexing progress, content statistics and index state"
+#~ msgstr ""
+#~ "Извеждане на напредъка на индексирането, статистика на съдържанието и "
+#~ "състоянието на индекса"
+
+#~ msgid "Create, list or delete tags for indexed content"
+#~ msgstr ""
+#~ "Създаване, извеждане или изтриване на етикети за индексираното съдържание"
+
+#~ msgid "Show the license and version in use"
+#~ msgstr "Извеждане на лиценза и версията"
+
+#~ msgid "Could not open /proc"
+#~ msgstr "Не може да се отвори папката „/proc“"
+
+#~ msgid "Could not stat() file"
+#~ msgstr "Файлът не може да се открие от функцията „stat()“"
+
+#, c-format
+#~ msgid "Could not open '%s'"
+#~ msgstr "„%s“ не може да се отвори"
+
+#, c-format
+#~ msgid "Could not terminate process %d - '%s'"
+#~ msgstr "Процес %d не може да се прекъсне — „%s“"
+
+#, c-format
+#~ msgid "Terminated process %d - '%s'"
+#~ msgstr "Процес %d е прекъснат — „%s“"
+
+#, c-format
+#~ msgid "Could not kill process %d - '%s'"
+#~ msgstr "Процес %d не може да се убие — „%s“"
+
+#, c-format
+#~ msgid "Killed process %d - '%s'"
+#~ msgstr "Процес %d е убит — „%s“"
+
+#~ msgid "Kill all Tracker processes and remove all databases"
+#~ msgstr ""
+#~ "Спиране на всички процеси по индексирането и изтриване на всички бази от "
+#~ "данни"
+
+#~ msgid "Same as --hard but the backup & journal are restored after restart"
+#~ msgstr ""
+#~ "Същото като „--hard“, но резервното копие и журнала се възстановяват след "
+#~ "рестартиране."
+
+#~ msgid ""
+#~ "Remove all configuration files so they are re-generated on next start"
+#~ msgstr ""
+#~ "Изтриване на всички конфигурационни файлове, за да се пресъздадат при "
+#~ "рестартиране."
+
+#~ msgid "You can not use the --hard and --soft arguments together"
+#~ msgstr "Опциите „--hard“ и „--soft“ са несъвместими"
+
+#~ msgid "Removing configuration files…"
+#~ msgstr "Изтриване на конфигурационните файлове…"
+
+#~ msgid "Resetting existing configuration…"
+#~ msgstr "Връщане на стандартните настройки…"
+
+#~ msgid "Search for files"
+#~ msgstr "Търсене за файлове"
+
+#~ msgid "Search for folders"
+#~ msgstr "Търсене за папки"
+
+#~ msgid "Search for music files"
+#~ msgstr "Търсене за музикални файлове"
+
+#~ msgid "Search for music albums (--all has no effect on this)"
+#~ msgstr "Търсене за музикални албуми (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Search for music artists (--all has no effect on this)"
+#~ msgstr ""
+#~ "Търсене за музикални изпълнители (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Search for image files"
+#~ msgstr "Търсене за файлове-изображения"
+
+#~ msgid "Search for video files"
+#~ msgstr "Търсене за видео файлове"
+
+#~ msgid "Search for document files"
+#~ msgstr "Търсене за файлове-документи"
+
+#~ msgid "Search for emails"
+#~ msgstr "Търсене за е-писма"
+
+#~ msgid "Search for contacts"
+#~ msgstr "Търсене за контакти"
+
+#~ msgid "Search for software (--all has no effect on this)"
+#~ msgstr "Търсене за софтуер (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Search for software categories (--all has no effect on this)"
+#~ msgstr "Търсене за категории софтуер (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Search for feeds (--all has no effect on this)"
+#~ msgstr "Търсене за емисии по RSS (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Search for bookmarks (--all has no effect on this)"
+#~ msgstr "Търсене за отметки (опцията „--all“ не влияе върху това)"
+
+#~ msgid "Limit the number of results shown"
+#~ msgstr "Брой резултати за показване"
+
+#~ msgid "Offset the results"
+#~ msgstr "Брой резултати за прескачане"
+
+#~ msgid "Use OR for search terms instead of AND (the default)"
+#~ msgstr ""
+#~ "Условията за изразите да се свързват с „ИЛИ“ вместо стандартното „И“"
+
+#~ msgid ""
+#~ "Show URNs for results (doesn't apply to --music-albums, --music-artists, "
+#~ "--feeds, --software, --software-categories)"
+#~ msgstr ""
+#~ "Извеждане на URN (имената на ресурсите) за резултатите (не се отнася за "
+#~ "„--music-albums“, „--music-artists“, „--feeds“, „--software“, „--software-"
+#~ "categories“)"
+
+#~ msgid "Return all non-existing matches too (i.e. include unmounted volumes)"
+#~ msgstr ""
+#~ "Извеждане и на липсващите попадения (т.е. включване и на носителите, и "
+#~ "дяловете, които не са монтирани)"
+
+#~ msgid ""
+#~ "Disable showing snippets with results. This is only shown for some "
+#~ "categories, e.g. Documents, Music…"
+#~ msgstr ""
+#~ "Без извеждане на откъси от резултатите. Те се показват само за някои "
+#~ "категории, напр. документи, музика…"
+
+#~ msgid "Disable Full Text Search (FTS). Implies --disable-snippets"
+#~ msgstr ""
+#~ "Изключване на пълнотекстовото търсене. Автоматично включва и „--disable-"
+#~ "snippets“"
+
+#~ msgid "Disable color when printing snippets and results"
+#~ msgstr "Без цвят при извеждането на резултатите и откъсите от тях"
+
+#~ msgid "search terms"
+#~ msgstr "търсени думи"
+
+#~ msgid "EXPRESSION"
+#~ msgstr "ИЗРАЗ"
+
+#~ msgid ""
+#~ "NOTE: Limit was reached, there are more items in the database not listed "
+#~ "here"
+#~ msgstr ""
+#~ "ВНИМАНИЕ: Достигнат е максималният брой връщани резултати. В базата от "
+#~ "данни има още съвпадения, които не са показани тук"
+
+#~ msgid "Could not get search results"
+#~ msgstr "Резултатите от търсенето не могат да бъдат получени"
+
+#~ msgid "No contacts were found"
+#~ msgstr "Не са открити контакти"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакти"
+
+#~ msgid "No name"
+#~ msgstr "Няма име"
+
+#~ msgid "No E-mail address"
+#~ msgstr "Няма адрес на е-поща"
+
+#~ msgid "No emails were found"
+#~ msgstr "Не са открити е-писма"
+
+#~ msgid "No files were found"
+#~ msgstr "Не са открити файлове"
+
+#~ msgid "No artists were found"
+#~ msgstr "Не са открити изпълнители"
+
+#~ msgid "Artists"
+#~ msgstr "Изпълнители"
+
+#~ msgid "No music was found"
+#~ msgstr "Не е открита музика"
+
+#~ msgid "Albums"
+#~ msgstr "Албуми"
+
+#~ msgid "No feeds were found"
+#~ msgstr "Не са открити емисии"
+
+#~ msgid "Feeds"
+#~ msgstr "Емисии"
+
+#~ msgid "No software was found"
+#~ msgstr "Не са открити програми"
+
+#~ msgid "Software"
+#~ msgstr "Програми"
+
+#~ msgid "No software categories were found"
+#~ msgstr "Не са открити категории програми"
+
+#~ msgid "Software Categories"
+#~ msgstr "Категории програми"
+
+#~ msgid "No results were found matching your query"
+#~ msgstr "Няма резултати напасващи заявката"
+
+#, c-format
+#~ msgid "Search term '%s' is a stop word."
+#~ msgstr "Търсената дума „%s“ се прескача."
+
+#, c-format
+#~ msgid ""
+#~ "Stop words are common words which may be ignored during the indexing "
+#~ "process."
+#~ msgstr ""
+#~ "Прескачаните думи са кратки, често употребявани думи, които не "
+#~ "предоставят специфичност и не се индексират."
+
+#~ msgid "Show statistics for current index / data set"
+#~ msgstr "Извеждане на статистика за индексите/съхранените данни"
+
+#~ msgid ""
+#~ "Show statistics about ALL RDF classes, not just common ones which is the "
+#~ "default (implied by search terms)"
+#~ msgstr ""
+#~ "Извеждане на статистика за всички класове по RDF, не само на най-честите "
+#~ "(което е стандартно и се определя от самото търсене)"
+
+#~ msgid ""
+#~ "Collect debug information useful for problem reporting and investigation, "
+#~ "results are output to terminal"
+#~ msgstr ""
+#~ "Събиране на информация за изчистване на грешки. Резултатите се извеждат в "
+#~ "терминала"
+
+#~ msgid "Could not get Tracker statistics"
+#~ msgstr "Не може да се получи статистика за Tracker"
+
+#~ msgid "No statistics available"
+#~ msgstr "Липсва статистика"
+
+#~ msgid "Statistics:"
+#~ msgstr "Статистика:"
+
+#~ msgid "Disk Information"
+#~ msgstr "Свободно място"
+
+#~ msgid "Remaining space on database partition"
+#~ msgstr "Оставащо място върху дяла с базата от данни"
+
+#~ msgid "Data Set"
+#~ msgstr "Размер на данните"
+
+#~ msgid "Configuration"
+#~ msgstr "Настройки"
+
+#~ msgid "No configuration was found"
+#~ msgstr "Не са открити настройки"
+
+#~ msgid "States"
+#~ msgstr "Състояния"
+
+#~ msgid "Data Statistics"
+#~ msgstr "Статистика за данните"
+
+#~ msgid "No connection available"
+#~ msgstr "Няма връзка"
+
+#~ msgid "Could not get statistics"
+#~ msgstr "Статистиката не може да бъде получена"
+
+#~ msgid "No statistics were available"
+#~ msgstr "Статистика няма"
+
+#~ msgid "Database is currently empty"
+#~ msgstr "Базата от данни в момента е празна"
+
+#~ msgid "Could not get basic status for Tracker"
+#~ msgstr ""
+#~ "Не може да се установи състоянието на основния процес на индексирането"
+
+#, c-format
+#~ msgid "Currently indexed"
+#~ msgstr "Индексиране"
+
+#~ msgid "Data is still being indexed"
+#~ msgstr "Данните все още се индексират"
+
+#, c-format
+#~ msgid "Estimated %s left"
+#~ msgstr "Остава %s"
+
+#~ msgid "All data miners are idle, indexing complete"
+#~ msgstr "Всички анализатори бездействат, индексирането завърши"
+
+#~ msgid ""
+#~ "List all tags (using FILTER if specified; FILTER always uses logical OR)"
+#~ msgstr ""
+#~ "Извеждане на всички етикети (и прилагане на ФИЛТРи, ако са указани. "
+#~ "Филтрите се комбинират винаги с логическо „ИЛИ“)"
+
+#~ msgid "FILTER"
+#~ msgstr "ФИЛТЪР"
+
+#~ msgid "Show files associated with each tag (this is only used with --list)"
+#~ msgstr ""
+#~ "Извеждане на всички файлове с определен етикет (използва се само с "
+#~ "опцията „--list“)"
+
+#~ msgid ""
+#~ "Add a tag (if FILEs are omitted, TAG is not associated with any files)"
+#~ msgstr ""
+#~ "Добавяне на етикет (ако няма ФАЙЛове, ЕТИКЕТът не се прилага към никой "
+#~ "файл)"
+
+#~ msgid "TAG"
+#~ msgstr "ЕТИКЕТ"
+
+#~ msgid "Delete a tag (if FILEs are omitted, TAG is removed for all files)"
+#~ msgstr ""
+#~ "Изтриване на етикет (ако няма ФАЙЛове, ЕТИКЕТът се изтрива от всички "
+#~ "файлове)"
+
+#~ msgid "Description for a tag (this is only used with --add)"
+#~ msgstr "Описание на етикет (може да се използва само с „--add“)"
+
+#~ msgid "STRING"
+#~ msgstr "НИЗ"
+
+#~ msgid "Use AND for search terms instead of OR (the default)"
+#~ msgstr ""
+#~ "Комбиниране на условията за търсене чрез „И“, а не с „ИЛИ“ (което е "
+#~ "стандартно)"
+
+#~ msgid "FILE…"
+#~ msgstr "ФАЙЛ…"
+
+#~ msgid "FILE [FILE…]"
+#~ msgstr "ФАЙЛ [ФАЙЛ…]"
+
+#~ msgid "Could not get file URNs"
+#~ msgstr "Не могат да се получат URN-ите (имената на ресурсите) на файловете"
+
+#~ msgid "Could not get files related to tag"
+#~ msgstr "Не могат да се получат файловете с определен етикет"
+
+#~ msgid "Could not get all tags in the database"
+#~ msgstr "Не могат да се получат всички етикети в базата от данни"
+
+#~ msgid "No files have been tagged"
+#~ msgstr "На нито един файл не е присвоен етикет"
+
+#~ msgid "Could not get files for matching tags"
+#~ msgstr "Не могат да се получат файловете с определен етикет"
+
+#~ msgid "No files were found matching ALL of those tags"
+#~ msgstr "Няма файлове със всички зададени етикети"
+
+#~ msgid "Could not get all tags"
+#~ msgstr "Не могат да бъдат получени всички етикети"
+
+#~ msgid "Tags (shown by name)"
+#~ msgstr "Етикети (подреждане по име)"
+
+#~ msgid "No files were modified"
+#~ msgstr "Не са променяни файлове"
+
+#~ msgid "Files do not exist or aren't indexed"
+#~ msgstr "Файловете не съществуват или не са индексирани"
+
+#~ msgid "Tag was added successfully"
+#~ msgstr "Успешно добавяне на етикети"
+
+#~ msgid "Could not add tag to files"
+#~ msgstr "Не могат да се добавят етикети към файловете"
+
+#~ msgid "Tagged"
+#~ msgstr "С етикет"
+
+#~ msgid "Not tagged, file is not indexed"
+#~ msgstr "Без етикет, файлът не е индексиран"
+
+#~ msgid "Could not get tag by label"
+#~ msgstr "Не може да се получи етикет по име"
+
+#~ msgid "No tags were found by that name"
+#~ msgstr "Няма етикети с това име"
+
+#~ msgid "None of the files had this tag set"
+#~ msgstr "Никой от файловете не е с този етикет"
+
+#~ msgid "Tag was removed successfully"
+#~ msgstr "Успешно премахване на етикет"
+
+#~ msgid "Untagged"
+#~ msgstr "Без етикет"
+
+#~ msgid "File not indexed or already untagged"
+#~ msgstr "Файлът не е индексиран или е без етикети"
+
+#~ msgid "The --list option is required for --show-files"
+#~ msgstr "Опцията „--show-files“ изисква опцията „--list“"
+
+#~ msgid ""
+#~ "The --and-operator option can only be used with --list and tag label "
+#~ "arguments"
+#~ msgstr ""
+#~ "Опцията „--and-operator“ може да се използва само с опцията „--list“ и "
+#~ "аргументи-етикети"
+
+#~ msgid "Add and delete actions can not be used together"
+#~ msgstr "Не може едновременно да се трие и добавя"
+
+#~ msgid "The --description option can only be used with --add"
+#~ msgstr "Опцията „--description“ изисква опцията „--add“"
+
+#~ msgid "Disable shutting down after 30 seconds of inactivity"
+#~ msgstr "Без спиране след 30 секунди бездействие"
+
+#~ msgid "- start the tracker writeback service"
+#~ msgstr "— стартиране на пакетния запис"
+
+#~ msgid "Saved queries"
+#~ msgstr "Запазени заявки"
